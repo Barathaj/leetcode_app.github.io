@@ -1,8 +1,9 @@
 import streamlit as st
 import pickle
 import pandas as pd
-with open('final_leetcode.pkl','rb') as file:
-    problems= pickle.load(file)
+#with open('final_leetcode.pkl','rb') as file:
+   # problems= pickle.load(file)
+problems=pickle.load(open('final_leetcode.pkl','rb'))
 st.title("Leetcode recommended problems")
 problems_list=problems['title'].values
 option=st.selectbox(
