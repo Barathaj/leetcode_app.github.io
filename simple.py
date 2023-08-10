@@ -28,7 +28,7 @@ if st.button('show recommendation'):
     st.title("companies")
     com=selected_problem['companies'].values[0]
     st.write(com)
-    st.title("Releted problems")
+    st.title("Related problems")
     tags = selected_problem['tags'].values[0]
     for problem in tags:
         st.write(problem)
